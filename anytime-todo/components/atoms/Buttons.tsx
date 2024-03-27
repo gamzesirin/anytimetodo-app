@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface ButtonProps {
+interface ButtonsProps {
   children: React.ReactNode;
   onClick: () => void;
   variant?: string;
   type?: "button" | "submit" | "reset";
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Buttons: React.FC<ButtonsProps> = ({
   children,
   onClick,
   variant = 'primary',
@@ -26,4 +26,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default Buttons;
