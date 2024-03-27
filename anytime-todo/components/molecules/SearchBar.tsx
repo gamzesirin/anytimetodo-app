@@ -19,8 +19,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
         name="search"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-       
-        
       />
       <Button type="submit" variant="success">Ara</Button>
     </form>
