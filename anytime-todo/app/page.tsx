@@ -1,17 +1,27 @@
+"use client"
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Home() {
-  return (
- <div>
-        <button
-        type="button"
-        className="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        boostrap deneme
-      </button>
+import React, { useState } from 'react';
 
- </div>
+import SearchBar from "@/components/molecules/SearchBar";
+import TodoTabs from '../components/organisms/TodoTabs';
+
+const HomePage = () => {
+
+
+  return (
+    <div className="container mt-5">
+    <div className="d-flex gap-5 justify-content-between pb-5">
+        <h1>Todo Listesi</h1>
+        <SearchBar/>
+    </div>
+    <TodoTabs />
+</div>
+
   );
-}
+};
+
+export default HomePage;
+
+
