@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import React from 'react'
 import SearchBar from '@/components/molecules/SearchBar'
-import TodoTabs from '../components/organisms/TaskTabs'
+import TaskTabs from '../components/organisms/TaskTabs'
 
 const HomePage = () => {
 	return (
@@ -13,7 +13,7 @@ const HomePage = () => {
 				<h1>Yapılacaklar Listesi</h1>
 				<SearchBar />
 			</div>
-			<TodoTabs />
+			<TaskTabs />
 		</div>
 	)
 }
