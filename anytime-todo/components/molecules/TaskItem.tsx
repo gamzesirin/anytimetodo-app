@@ -15,7 +15,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onComplete, onDelete }) => {
 	return (
 		<div className="list-group-item d-flex justify-content-between align-items-center">
 			<span className={task.isCompleted ? 'text-decoration-line-through' : ''}>{task.title}</span>
-			<div>
+			<div className="d-flex gap-2">
 				<Link href={`/update/${task.id}`} passHref>
 					<button className="btn btn-warning">
 						<HiOutlinePencilSquare />

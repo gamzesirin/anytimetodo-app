@@ -1,5 +1,3 @@
-// TaskList.tsx
-
 import { ITask } from '../models/ITask'
 import React from 'react'
 import TaskItem from '../molecules/TaskItem'
