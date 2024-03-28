@@ -1,22 +1,30 @@
 'use client'
 
 import React from 'react'
-import TodoForm from '@/components/molecules/TodoForm'
+import TaskAddForm from '@/components/molecules/TaskAddForm'
+import axios from 'axios'
+import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
 
-const AddTodoPage = () => {
-	const handleFormSubmit = (data: any) => {
-		console.log(data)
-		router.push('/')
+const TaskAddPage = () => {
+	const router = useRouter()
+
+	const handleFormSubmit = async (data: { title: string; description: string }) => {
+		try {
+			await axios.post('/api/tasks', data)
+			toast.success('Görev başarıyla eklendi.')
+			router.push('/')
+		} catch (error) {
+			toast.error('Görev eklenirken bir hata oluştu.')
+		}
 	}
 
-	const router = useRouter()
 	return (
 		<div className="container p-5">
 			<h2 className="py-2">Görev Ekle</h2>
-			<TodoForm onSubmit={handleFormSubmit} buttonLabel="Ekle" />
+			<TaskAddForm onSubmit={handleFormSubmit} />
 		</div>
 	)
 }
 
-export default AddTodoPage
+export default TaskAddPage

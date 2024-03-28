@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 
-import TodoForm from '@/components/molecules/TodoForm'
+import TodoForm from '@/components/molecules/TaskAddForm'
 
 const UpdateTodoPage = () => {
 	const [data, setData] = useState([])
