@@ -32,6 +32,7 @@ Projeyi yerel geliştirme ortamınıza klonlamak için aşağıdaki adımları t
 git clone https://github.com/your-repository/todoapp.git
 cd todoapp
 npm install
+```
 
 Firebase ve diğer servisler için gerekli API anahtarlarını ve bilgilerini .env dosyasına ekleyin.
 
@@ -39,7 +40,5 @@ Kullanım
 
 Uygulamayı yerel olarak başlatmak için:
 
-bash
 npm run dev
 Bu komut, uygulamayı localhost:3000 adresinde başlatır.
-```
