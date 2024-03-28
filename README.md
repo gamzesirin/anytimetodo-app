@@ -1,6 +1,6 @@
 # Todo App
 
-Bu Todo App, modern web teknolojileri kullanılarak geliştirilmiştir. Proje, Next.js 14, Bootstrap 5, TypeScript ve Firebase'i bir araya getirerek, kullanıcı dostu bir Todo listesi uygulaması sunar. Uygulama, kullanıcıların todo öğeleri eklemesine, güncellemesine ve görüntülemesine olanak tanır.
+Bu Todo App, modern web teknolojileri kullanılarak geliştirilmiştir. Proje, Next.js 14, Bootstrap 5, TypeScript ve Firebase'i bir araya getirerek, kullanıcı dostu bir Todo listesi uygulaması sunar. Uygulama, kullanıcıların todo öğeleri eklemesine, güncellemesine ve silinmesine olanak tanır.
 
 ## Özellikler
 
