@@ -16,23 +16,24 @@ const SearchBar: React.FC<SearchBarProps> = ({
   onSearch
 }) => {
   return (
-<div className="d-flex gap-5 align-items-center">
+    <div className="d-flex flex-column flex-md-row gap-2 gap-md-5 align-items-center">
+      <Link href="/add" className='text-white'>
+        <Buttons type="submit" variant="primary">
+          Görev Ekle
+        </Buttons>
+      </Link>
 
-    <Buttons type="submit" variant="primary" >
-     <Link href="/add" className='text-white'>Add Todo </Link>
-      </Buttons>
-
-    <form className="d-flex gap-1 align-items-center" onSubmit={onSearch}>
-      <TextInput
-        name="search"
-        placeholder="Ara..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <Buttons type="submit" variant="primary">
-      <IoSearch />
-      </Buttons>
-    </form>
+      <form className="d-flex gap-1 align-items-center" onSubmit={onSearch}>
+        <TextInput
+          name="search"
+          placeholder="Ara..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <Buttons type="submit" variant="primary">
+          <IoSearch />
+        </Buttons>
+      </form>
     </div>
   );
 };

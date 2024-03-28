@@ -19,8 +19,8 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onComplete, onDelete }) => {
         <TodoItem
         key={todo.id}
         todo={todo}
-        onComplete={() => {/* Todo tamamlama  */}}
-        onDelete={() => {/* Todo silme */}}
+        onComplete={() => onComplete(todo.id)}
+        onDelete={() => onDelete(todo.id)}
         onUpdate={() => {/* Todo güncelleme */}}
       />
       ))}
