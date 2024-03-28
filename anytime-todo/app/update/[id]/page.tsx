@@ -1,35 +1,39 @@
-"use client";
+'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
+import { useParams, useRouter } from 'next/navigation'
 
-import TodoForm from '@/components/molecules/TodoForm';
-import { useRouter } from 'next/navigation';
+import TodoForm from '@/components/molecules/TodoForm'
 
 const UpdateTodoPage = () => {
-  const [initialData, setInitialData] = useState({ title: '', description: '' });
-  const router = useRouter();
+	const [data, setData] = useState([])
+	const router = useRouter()
+	const params = useParams()
 
-  useEffect(() => {
-    if (router.isReady) {
-      const { id } = router.query;
+	const handleFormSubmit = async (formData: any) => {
+		try {
+			const response = await fetch(`/api/todos/${params.id}`, {
+				method: 'PUT',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(formData)
+			})
 
-      setInitialData({ title: "Existing Todo Title", description: "Existing Todo Description" });
-    }
-  }, [router.isReady, router.query]);
+			if (response.ok) {
+				router.push('/')
+			}
+		} catch (error) {
+			console.error('Error:', error)
+		}
+	}
 
-  const handleFormSubmit = (data) => {
-    console.log("Updated Todo:", data);
+	return (
+		<div className="container p-5">
+			<h2 className="py-2">Görev Güncelle</h2>
+			<TodoForm onSubmit={handleFormSubmit} buttonLabel="Güncelle" />
+		</div>
+	)
+}
 
-    router.push('/');
-  };
-
-  return (
-    <div className='container p-5'>
-      <h2 className='py-2'>Görev Güncelle</h2>
-      <TodoForm onSubmit={handleFormSubmit}  buttonLabel="Güncelle" />
-    </div>
-  );
-};
-
-export default UpdateTodoPage;
-
+export default UpdateTodoPage
