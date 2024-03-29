@@ -44,9 +44,12 @@ npm run dev
 Bu komut, uygulamayı localhost:3000 adresinde başlatır.
 
 
-![screencapture-localhost-3000-update-3UqdwmTwafoJWXzO2CfG-2024-03-29-01_24_54](https://github.com/gamzesirin/anytimetodo-app/assets/155438363/d87c2df4-c8e1-47c6-a8f1-2e1654dc2e77)
 ![screencapture-localhost-3000-add-2024-03-29-01_16_47](https://github.com/gamzesirin/anytimetodo-app/assets/155438363/203ffd94-438e-4065-853d-36355e9e03ff)
 
+![screencapture-localhost-3000-2024-03-29-02_44_18](https://github.com/gamzesirin/anytimetodo-app/assets/155438363/e47ec0a7-1748-4fdd-9401-e82a3e9f45fd)
 
+![screencapture-localhost-3000-update-3UqdwmTwafoJWXzO2CfG-2024-03-29-01_24_54](https://github.com/gamzesirin/anytimetodo-app/assets/155438363/d87c2df4-c8e1-47c6-a8f1-2e1654dc2e77)
+
+![screencapture-localhost-3000-2024-03-29-02_44_29](https://github.com/gamzesirin/anytimetodo-app/assets/155438363/c577a32f-61f6-4ebc-b34e-6fb643e331fb)
 
 
