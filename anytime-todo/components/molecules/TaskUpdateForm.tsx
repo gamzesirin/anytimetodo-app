@@ -14,7 +14,7 @@ const TaskUpdateForm: React.FC<TaskUpdateFormProps> = ({ initialValues, onSubmit
 		<div className="container mt-3">
 			<Formik
 				initialValues={initialValues}
-				enableReinitialize // Bu satır eklendi
+				enableReinitialize
 				validate={(values) => {
 					const errors: Record<string, string> = {}
 					if (!values.title) {

@@ -43,6 +43,7 @@ const TaskTabs: React.FC = () => {
 			toast.error('Görev bulunamadı')
 		}
 	}
+	//useEffect ile bileşen yüklendiğinde bir kez çalışacak şekilde fetchData fonksiyonu çağrılır, böylece görevler başlangıçta çekilir.
 
 	useEffect(() => {
 		fetchData()

@@ -5,7 +5,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik'
 import React from 'react'
 
 interface TaskAddFormProps {
-	onSubmit: (data: { title: string; description: string }) => void
+	onSubmit: (data: { title: string; description: string }) => void //TaskAddForm bileşeninin onSubmit adında bir prop alması gerektiğini gösterir. Bu propda bir data argümanı alır
 }
 
 const TaskAddForm: React.FC<TaskAddFormProps> = ({ onSubmit }) => {

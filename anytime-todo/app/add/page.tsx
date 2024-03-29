@@ -6,6 +6,8 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
 
+//Next.js'in yönlendirme işlevselliğini kullanmak için bir hook
+
 const TaskAddPage = () => {
 	const router = useRouter()
 
